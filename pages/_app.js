@@ -1,8 +1,10 @@
-import '../styles/globals.css'
-import Layout from '../src/components/Layout'
+import '../styles/index.scss'
+import Layout from '../components/Layout'
 import React,{useState} from "react"
 
 
+// Example of diferent animation for each page
+//https://codesandbox.io/s/framer-motion-animatepresence-react-router-dom-9dhyn?from-embed
 
 
 function MyApp({ Component, pageProps }) {

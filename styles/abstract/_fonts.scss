@@ -1,0 +1,132 @@
+@use  "./colors.module" as *;
+@use "./responsive" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Share:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+
+h1 {
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 3rem;
+  color: $black-color;
+  line-height: 2rem;
+  margin-bottom: 0rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @include tablet {
+    font-size: 2.7rem;
+    line-height: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+h2 {
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  @include tablet {
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+h3 {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  margin-top: 0px;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-top: 0px;
+  margin-bottom: 0.5rem;
+}
+
+h6 {
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-top: 0px;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-top: 0px;
+  margin-bottom: 2rem;
+  line-height: 1.7rem;
+  color: $secondary-color;
+}
+
+.hyphenation {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+.textYellow {
+  color: $primary-color;
+}
+
+.strongYellow {
+  font-weight: bold;
+  color: $primary-color;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.importantText {
+  font-family: "Roboto";
+  flex-wrap: wrap;
+  font-weight: 300;
+  font-size: 2.2rem;
+  color: $black-color;
+  line-height: 4.3rem;
+  display: flex;
+}
+
+@mixin caption {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-family: "Share Tech Mono", monospace;
+  text-align: center;
+}
+
+.caption {
+  @include caption;
+}
+
+.white-caption {
+  @include caption;
+  font-size: 1.2rem;
+  color: $white-color;
+}
