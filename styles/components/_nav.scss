@@ -1,7 +1,6 @@
-@use  "../abstract/colors.module" as *;
-@use  "../abstract/responsive" as *;
-@use  "../abstract/fonts";
-
+@use "../abstract/colors.module" as *;
+@use "../abstract/responsive" as *;
+@use "../abstract/fonts";
 
 .top-bar {
   position: relative;
@@ -52,8 +51,6 @@
   }
 }
 
-
-
 .layout-nav {
   width: 100%;
   display: flex;
@@ -102,10 +99,9 @@
   cursor: pointer;
 
   @include tablet {
-    font-size: 1.45rem;
+    font-size: 1.35rem;
   }
 }
-
 
 .triangle {
   width: 0;

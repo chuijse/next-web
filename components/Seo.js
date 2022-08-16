@@ -1,20 +1,23 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 
+const keywords =
+  "Interacción digital,diseño,ux,ui,electrónica,front-end,arduino,diseño Industrial";
+const domain = "next-web-rose.vercel.app";
+const year = "2022";
+const author = "Cristian Huijse Heise";
+const linkedin = "https://cl.linkedin.com/in/cristianhuijse";
+const github = "https://github.com/chuijse";
+
 export default function Seo({
   pageTitle = "Portafolio",
   description = "Este es el portafolio de Cristian Huijse Heise, Diseñador industrial especialista en el ambito de la interacción digital",
   icon = "/favicon.ico",
   image = "/meta-data.jpg",
-  year = "2022",
-  author = "Cristian Huijse Heise",
-  linkedin = "https://cl.linkedin.com/in/cristianhuijse",
-  github = "https://github.com/chuijse",
   article = false,
-  domain = "next-web-rose.vercel.app",
-  keywords = "Interacción digital,diseño,ux,ui,electrónica,front-end,arduino,diseño Industrial",
 }) {
   const router = useRouter();
+
   return (
     <Head>
       <title>{`CHH | ${pageTitle}`}</title>
