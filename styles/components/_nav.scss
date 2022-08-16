@@ -6,7 +6,7 @@
 .top-bar {
   position: relative;
   //border: 1px solid red;
-  top: 15px;
+  margin-top: 15px;
   right: 0px;
   left: 0px;
   z-index: 100;
@@ -111,6 +111,6 @@
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 17.5px 12.5px 0 12.5px;
+  border-width: 15px 10px 0 10px;
   border-color: $gray-color transparent transparent transparent;
 }
