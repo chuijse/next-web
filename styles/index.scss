@@ -1,4 +1,4 @@
-@use  "./sections/layout";
+@use "./sections/layout";
 //@import "./sections/about";
 //@import "./sections/blog";
 //@import "./sections/courses";
@@ -20,11 +20,11 @@ a {
 .section {
   //border: 1px solid red;
   width: 100%;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 500px;
 }
 
 figure {
