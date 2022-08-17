@@ -2,11 +2,18 @@ import Seo from "../components/Seo";
 import Link from "next/link";
 import { Courses } from "../components/Courses";
 import { useRouter } from "next/router";
+import { motion } from "framer-motion";
 
 export default function Teaching() {
   const router = useRouter();
   return (
-    <section className="section">
+    <motion.section
+      initial={{ y: -50, opacity: 0, scale: 0.9 }}
+      animate={{ y: 0, opacity: 1, scale: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+      className="section"
+    >
       <Seo pageTitle="Teaching" />
       <h1>Teaching</h1>
       <p>this is de Teaching page</p>
@@ -33,6 +40,6 @@ export default function Teaching() {
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }
