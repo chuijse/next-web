@@ -10,7 +10,7 @@ export default function Course({ course }) {
     <motion.article
       initial={{ x: -50, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
-      exit={{ opacity: 0 }}
+      exit={{ x: -50, opacity: 0 }}
       transition={{ duration: 0.5 }}
       className="section"
       //key={`coures-page-${course.slug}`}

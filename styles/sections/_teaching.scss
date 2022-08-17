@@ -1,0 +1,61 @@
+@use "../abstract/fonts" as *;
+@use "../abstract/colors.module" as *;
+@use "../abstract/responsive" as *;
+
+.main-teaching {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+    margin-top: 100px;
+
+    .teaching-line {
+      width: 100%;
+      margin-top: 8px;
+      height: 1px;
+      background: $gray-color;
+    }
+    .subHeader {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h2 {
+        text-transform: none;
+        color: $gray-color;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+.teachingGrid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 40px;
+  padding: 25px;
+  grid-auto-flow: row dense;
+  margin-top: 30px;
+
+  @include tablet {
+    grid-template-columns: repeat(2, minmax(350px, 400px));
+    grid-gap: 10px 10px;
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(2, minmax(350px, 400px));
+    grid-gap: 30px 30px;
+  }
+
+  @include large {
+    grid-template-columns: repeat(3, minmax(350px, 400px));
+    grid-gap: 40px 40px;
+  }
+}

@@ -1,4 +1,5 @@
 @use "./sections/layout";
+@use "./sections/teaching";
 //@import "./sections/about";
 //@import "./sections/blog";
 //@import "./sections/courses";
@@ -6,7 +7,6 @@
 //@import "./component/modal";
 //@import "./abstract/fonts";
 //@import "./component/single-image";
-
 body {
   margin: 0px;
   //overflow: auto;
