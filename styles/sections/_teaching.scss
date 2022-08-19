@@ -21,7 +21,7 @@
 
   @include tablet {
     grid-template-columns: repeat(2, minmax(350px, 400px));
-    grid-gap: 10px 10px;
+    grid-gap: 20px 20px;
   }
 
   @include desktop {

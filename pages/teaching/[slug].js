@@ -21,7 +21,7 @@ export default function Course({ course }) {
         article={true}
       />
       <h1>{course.title}</h1>
-      <img src={course.img} alt="test" width={"60%"} />
+      <img src={course.MainImg.url} alt="test" width={"60%"} />
       <p style={{ width: "60%" }}>{course.abstract}</p>
     </motion.article>
   );

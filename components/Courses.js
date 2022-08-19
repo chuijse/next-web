@@ -1,23 +1,135 @@
 export const Courses = [
   {
-    img: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
-    title: "Breakfast",
-    slug: "01",
+    MainImg: {
+      url: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
+      caption: "Luthiers del siglo XXI, Bajo electrico ",
+    },
+    title: "Luthiers del siglo XIX",
     abstract:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.",
+      "Un espacio de reflexión, colaboración y de hacer en torno a la música y cómo las tecnologías pueden ayudarnos a extender nuestras capacidades creativas",
+    semester: "1",
+    slug: "luthiers-del-siglo-xix-1-2019",
+    colleages: [
+      { name: "Cristian Huijse", link: "chuijse.github.io" },
+      { name: "Pablo Huijse", link: "phuijse.github.io" },
+      { name: "Teo Danneman", link: "TeoDaneman.com" },
+    ],
+    role: "Profesor asistente",
+    bestwork: true,
+    content: [
+      { name: "Diseño de interacción digital", link: "nba.com" },
+      { name: "electronica", link: "nba.com" },
+      { name: "Interfaces Físicas", link: "nba.com" },
+    ],
+    university: { name: "Universidad Austral", acroyn: "UACH" },
+    year: "2019",
+    body: "El Proyecto “Luthiers del siglo XXI: diseñando instrumentos musicales inclusivos” es una instancia de encuentro entre alumnos y profesores de la Universidad Austral de Chile, junto a usuarios, profesores y voluntarios del Instituto Teletón Valdivia, con el objetivo de evaluar, diseñar y crear instrumentos musicales que hagan uso de la tecnología para adaptarse a las distintas capacidades de cada intérprete o músico.",
+    imageGallery: [
+      {
+        url: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
+        caption: "Luthiers del siglo XXI, Bajo electrico ",
+      },
+      {
+        url: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
+        caption: "Luthiers del siglo XXI, Bajo electrico ",
+      },
+      {
+        ul: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
+        caption: "Luthiers del siglo XXI, Bajo electrico ",
+      },
+      {
+        url: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
+        caption: "Luthiers del siglo XXI, Bajo electrico ",
+      },
+    ],
+  },
+
+  {
+    MainImg: {
+      url: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
+      caption: "Luthiers del siglo XXI, Bajo electrico ",
+    },
+    title: "Luthiers del siglo XIX",
+    abstract:
+      "Un espacio de reflexión, colaboración y de hacer en torno a la música y cómo las tecnologías pueden ayudarnos a extender nuestras capacidades creativas",
+    semester: "1",
+    slug: "luthiers-del-siglo-xix-1-2019",
+    colleages: [
+      { name: "Cristian Huijse", link: "chuijse.github.io" },
+      { name: "Pablo Huijse", link: "phuijse.github.io" },
+      { name: "Teo Danneman", link: "TeoDaneman.com" },
+    ],
+    role: "Profesor asistente",
+    bestwork: true,
+    content: [
+      { name: "Diseño de interacción digital", link: "nba.com" },
+      { name: "electronica", link: "nba.com" },
+      { name: "Interfaces Físicas", link: "nba.com" },
+    ],
+    university: { name: "Universidad Austral", acroyn: "UACH" },
+    year: "2019",
+    body: "El Proyecto “Luthiers del siglo XXI: diseñando instrumentos musicales inclusivos” es una instancia de encuentro entre alumnos y profesores de la Universidad Austral de Chile, junto a usuarios, profesores y voluntarios del Instituto Teletón Valdivia, con el objetivo de evaluar, diseñar y crear instrumentos musicales que hagan uso de la tecnología para adaptarse a las distintas capacidades de cada intérprete o músico.",
+    imageGallery: [
+      {
+        rl: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
+        caption: "Luthiers del siglo XXI, Bajo electrico ",
+      },
+      {
+        rl: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
+        caption: "Luthiers del siglo XXI, Bajo electrico ",
+      },
+      {
+        rl: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
+        caption: "Luthiers del siglo XXI, Bajo electrico ",
+      },
+      {
+        rl: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
+        caption: "Luthiers del siglo XXI, Bajo electrico ",
+      },
+    ],
   },
   {
-    img: "https://images.unsplash.com/photo-1551782450-a2132b4ba21d",
-    title: "Burger",
-    slug: "02",
+    MainImg: {
+      url: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
+      caption: "Luthiers del siglo XXI, Bajo electrico ",
+    },
+    title: "Luthiers del siglo XIX",
     abstract:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1522770179533-24471fcdba45",
-    title: "Camera",
-    slug: "03",
-    abstract:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.",
+      "Un espacio de reflexión, colaboración y de hacer en torno a la música y cómo las tecnologías pueden ayudarnos a extender nuestras capacidades creativas",
+    semester: "1",
+    slug: "luthiers-del-siglo-xix-1-2019",
+    colleages: [
+      { name: "Cristian Huijse", link: "chuijse.github.io" },
+      { name: "Pablo Huijse", link: "phuijse.github.io" },
+      { name: "Teo Danneman", link: "TeoDaneman.com" },
+    ],
+    role: "Profesor asistente",
+    bestwork: true,
+    content: [
+      { name: "Diseño de interacción digital", link: "nba.com" },
+      { name: "electronica", link: "nba.com" },
+      { name: "Interfaces Físicas", link: "nba.com" },
+    ],
+    university: { name: "Universidad Austral", acroyn: "UACH" },
+    year: "2019",
+    body: "El Proyecto “Luthiers del siglo XXI: diseñando instrumentos musicales inclusivos” es una instancia de encuentro entre alumnos y profesores de la Universidad Austral de Chile, junto a usuarios, profesores y voluntarios del Instituto Teletón Valdivia, con el objetivo de evaluar, diseñar y crear instrumentos musicales que hagan uso de la tecnología para adaptarse a las distintas capacidades de cada intérprete o músico.",
+    imageGallery: [
+      {
+        rl: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
+        caption: "Luthiers del siglo XXI, Bajo electrico ",
+      },
+      {
+        rl: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
+        caption: "Luthiers del siglo XXI, Bajo electrico ",
+      },
+      {
+        rl: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
+        caption: "Luthiers del siglo XXI, Bajo electrico ",
+      },
+      {
+        rl: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
+        caption: "Luthiers del siglo XXI, Bajo electrico ",
+      },
+    ],
   },
 ];

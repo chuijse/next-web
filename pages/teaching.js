@@ -27,22 +27,23 @@ export default function Teaching() {
     >
       <Seo pageTitle="Teaching" />
       <CardsHeader title="docencia" subTitle="Filtra por universidad" />
-      <motion.ul
-        style={{ display: "flex", gap: "50px", marginTop: "30px" }}
+      <motion.section
+        className="teachingGrid"
         variants={container}
         initial="hidden"
         animate="show"
         exit="exit"
+        key={`teachingGrid-${"filter"}`}
       >
         {Courses.map((course, i) => (
           <Card
             title={course.title}
             slug={course.slug}
-            img={course.img}
+            img={course.MainImg.url}
             key={`course-card-${i}`}
           />
         ))}
-      </motion.ul>
+      </motion.section>
     </motion.article>
   );
 }

@@ -37,7 +37,7 @@ export default function Card({ slug, title, img, i }) {
       }}
       onClick={() => navigate(slug)}
     >
-      <img src={img} alt={title} width={300} />
+      <img src={img} alt={title} width={"100%"} />
       <Link href={`teaching/${slug}`}>
         <a>
           <h3>{title}</h3>
