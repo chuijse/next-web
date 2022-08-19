@@ -2,6 +2,7 @@
 @use "../abstract/colors.module" as *;
 @use "../abstract/responsive" as *;
 @use "../components/cards-headers";
+@use "../components/card";
 
 .main-teaching {
   display: flex;

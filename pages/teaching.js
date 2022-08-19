@@ -40,6 +40,9 @@ export default function Teaching() {
             title={course.title}
             slug={course.slug}
             img={course.MainImg.url}
+            semester={course.semester}
+            year={course.year}
+            contents={course.content}
             key={`course-card-${i}`}
           />
         ))}
