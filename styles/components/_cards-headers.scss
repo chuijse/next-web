@@ -2,20 +2,20 @@
 @use "../abstract/colors.module" as *;
 //@use "../abstract/responsive" as *;
 
-.intro {
+.cards-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: max-content;
   margin-top: 100px;
 
-  .teaching-line {
+  .line {
     width: 100%;
     margin-top: 8px;
     height: 1px;
     background: $gray-color;
   }
-  .subHeader {
+  .sub-header {
     display: flex;
     flex-direction: column;
     align-items: center;
