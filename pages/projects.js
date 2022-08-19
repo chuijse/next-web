@@ -1,11 +1,11 @@
 import Seo from "../components/Seo";
+import CardsHeader from "../components/CardsHeader";
 
 export default function Projects() {
   return (
     <section className="section">
       <Seo pageTitle="Projects" />
-      <h1>Projects</h1>
-      <p>this is de Projects page</p>
+      <CardsHeader title="Proyectos" subTitle="Filtra por tipo de contenido" />
     </section>
   );
 }
