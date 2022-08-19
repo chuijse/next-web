@@ -1,10 +1,13 @@
 import Seo from "../../components/Seo";
 import { Courses } from "../../components/Courses";
 import { motion } from "framer-motion";
+import { useRouter } from "next/router";
 
 export default function Course({ course }) {
   //console.log(Courses.filter((c) => c.slug.includes("02")));
   //console.log(course);
+  //const router = useRouter();
+  //console.log(router.query.linkProps) //read data from query
 
   return (
     <motion.article
@@ -20,6 +23,7 @@ export default function Course({ course }) {
         description="Este es el articulo 01 y habla de esto y esto otro una y otra vez 01"
         article={true}
       />
+      <p>{}</p>
       <h1>{course.title}</h1>
       <img src={course.MainImg.url} alt="test" width={"60%"} />
       <p style={{ width: "60%" }}>{course.abstract}</p>
@@ -32,8 +36,8 @@ export async function getStaticPaths() {
   return { paths, fallback: false };
 }
 
-export async function getStaticProps({ params }) {
-  const data = Courses.find((c) => c.slug.includes(params.slug));
+export async function getStaticProps(context) {
+  const data = Courses.find((c) => c.slug.includes(context.params.slug));
   return {
     props: {
       course: data,

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import flechaHorizontal from "../images/flechaHorizontal.svg";
+import Image from "next/image";
 
 export default function Card({
   slug,
@@ -22,20 +23,32 @@ export default function Card({
   }, []);
 
   const item = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { clipPath: "inset(100% 0% 0% 0%)", y: "-100%" },
     show: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 1,
-      },
+      clipPath: "inset(0% 0% 0% 0%)",
+      y: "0",
+      transition: { duration: 1 },
     },
-    exit: onExit ? { y: -30, transition: { duration: 0.2 } } : null,
+    exit: onExit
+      ? null
+      : {
+          clipPath: "inset( 0% 0% 100% 0%)",
+          y: "100%",
+          transition: { duration: 0.5 },
+        },
   };
 
   function navigate(slug) {
     setOnExit(true);
-    router.push(`teaching/${slug}`);
+
+    router.push(
+      {
+        pathname: `teaching/${slug}`,
+        //query: { linkProps: slug }, //use for sending data
+      },
+      undefined,
+      { scroll: false }
+    );
   }
 
   return (
@@ -84,14 +97,18 @@ export default function Card({
               className="info-open"
             >
               <p>{contentText}</p>
-              <motion.img
+              <motion.div
                 initial={{ x: -50, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ delay: "0.5" }}
-                src={flechaHorizontal}
-                alt="flecha-teaching-chh.work"
-                width="45"
-              />
+              >
+                <Image
+                  src={flechaHorizontal}
+                  alt="flecha-teaching-chh.work"
+                  width="45"
+                />
+              </motion.div>
+              <motion.div />
             </motion.div>
           ) : null}
         </div>

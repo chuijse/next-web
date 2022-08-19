@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 //https://codesandbox.io/s/animated-page-transitions-in-nextjs-yb71o5
 
 function MyApp({ Component, pageProps, router }) {
+  //console.log(router);
   return (
     <React.Fragment>
       <Nav />
