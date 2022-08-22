@@ -17,7 +17,7 @@ export default function TemplateHeaderImage({ isTablet, mainImage }) {
         src={mainImage.url}
         alt={`${mainImage.caption}`}
         layout="fill"
-        width="500px"
+        objectFit="cover"
       ></Image>
     </motion.div>
   );
