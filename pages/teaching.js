@@ -12,7 +12,7 @@ export default function Teaching() {
       opacity: 1,
       transition: {
         delayChildren: 0.5,
-        staggerChildren: 0.25,
+        //staggerChildren: 0.25,
       },
     },
   };
@@ -25,8 +25,8 @@ export default function Teaching() {
       transition={{ duration: 1.5 }}
       className="main-teaching"
     >
-      <Seo pageTitle="Teaching" />
-      <CardsHeader title="docencia" subTitle="Filtra por universidad" />
+      <Seo pageTitle="Docencia" />
+      <CardsHeader title="docencia" description="Lista de cursos" />
       <motion.section
         className="teachingGrid"
         variants={container}

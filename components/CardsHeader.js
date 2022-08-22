@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export default function CardsHeader({ title, subTitle }) {
+export default function CardsHeader({ title, description }) {
   return (
     <section className="cards-header">
       <motion.h1
@@ -17,12 +17,12 @@ export default function CardsHeader({ title, subTitle }) {
         transition={{ duration: 0.5 }}
       />
       <motion.div
-        className="sub-header"
+        className="description"
         initial={{ clipPath: "inset(100% 0% 0% 0%)", y: "-100%" }}
         animate={{ clipPath: "inset(0% 0% 0% 0%)", y: "0" }}
         transition={{ duration: 0.5 }}
       >
-        <h2>{subTitle}</h2>
+        <p className="description-text">{description}</p>
       </motion.div>
     </section>
   );
