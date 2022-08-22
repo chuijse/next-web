@@ -1,6 +1,6 @@
 export const Courses = [
   {
-    MainImg: {
+    mainImage: {
       url: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
       caption: "Luthiers del siglo XXI, Bajo electrico ",
     },
@@ -14,9 +14,9 @@ export const Courses = [
       { name: "Pablo Huijse", link: "phuijse.github.io" },
       { name: "Teo Danneman", link: "TeoDaneman.com" },
     ],
-    role: "Profesor asistente",
+    role: { name: "Profesor asistente" },
     bestwork: true,
-    content: [
+    courseContent: [
       { name: "Diseño de interacción digital", link: "nba.com" },
       { name: "electronica", link: "nba.com" },
       { name: "Interfaces Físicas", link: "nba.com" },
@@ -45,7 +45,7 @@ export const Courses = [
   },
 
   {
-    MainImg: {
+    mainImage: {
       url: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
       caption: "Luthiers del siglo XXI, Bajo electrico ",
     },
@@ -59,9 +59,9 @@ export const Courses = [
       { name: "Pablo Huijse", link: "phuijse.github.io" },
       { name: "Teo Danneman", link: "TeoDaneman.com" },
     ],
-    role: "Profesor asistente",
+    role: { name: "Profesor asistente" },
     bestwork: true,
-    content: [
+    courseContent: [
       { name: "Diseño de interacción digital", link: "nba.com" },
       { name: "electronica", link: "nba.com" },
       { name: "Interfaces Físicas", link: "nba.com" },
@@ -89,7 +89,7 @@ export const Courses = [
     ],
   },
   {
-    MainImg: {
+    mainImage: {
       url: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
       caption: "Luthiers del siglo XXI, Bajo electrico ",
     },
@@ -103,14 +103,14 @@ export const Courses = [
       { name: "Pablo Huijse", link: "phuijse.github.io" },
       { name: "Teo Danneman", link: "TeoDaneman.com" },
     ],
-    role: "Profesor asistente",
+    role: { name: "Profesor asistente" },
     bestwork: true,
-    content: [
+    courseContent: [
       { name: "Diseño de interacción digital", link: "nba.com" },
       { name: "electronica", link: "nba.com" },
       { name: "Interfaces Físicas", link: "nba.com" },
     ],
-    university: { name: "Universidad Austral", acroyn: "UACH" },
+    universities: { name: "Universidad Austral", acroyn: "UACH" },
     year: "2019",
     body: "El Proyecto “Luthiers del siglo XXI: diseñando instrumentos musicales inclusivos” es una instancia de encuentro entre alumnos y profesores de la Universidad Austral de Chile, junto a usuarios, profesores y voluntarios del Instituto Teletón Valdivia, con el objetivo de evaluar, diseñar y crear instrumentos musicales que hagan uso de la tecnología para adaptarse a las distintas capacidades de cada intérprete o músico.",
     imageGallery: [

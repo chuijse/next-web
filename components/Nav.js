@@ -6,7 +6,7 @@ import style from "../styles/abstract/_colors.module.scss";
 
 const routes = [
   { name: "About", path: "/" },
-  { name: "Projects", path: "/projects" },
+  { name: "projects", path: "/projects" },
   { name: "Teaching", path: "/teaching" },
   { name: "contact", path: "/contact" },
 ];

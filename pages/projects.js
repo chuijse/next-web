@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <section className="section">
       <Seo pageTitle="Proyectos" />
-      <CardsHeader title="Proyectos" description="Lista de proyectos" />
+      <CardsHeader title="Proyectos" description="Lista de trabajos" />
     </section>
   );
 }

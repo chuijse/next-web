@@ -19,7 +19,7 @@ export default function Card({
   const router = useRouter();
 
   useEffect(() => {
-    setContentText(contents.map(({ name }) => `${name}`).join(", "));
+    setContentText(contents?.map(({ name }) => `${name}`).join(", "));
   }, []);
 
   const item = {

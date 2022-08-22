@@ -2,19 +2,20 @@ import Seo from "../../components/Seo";
 import { Courses } from "../../components/Courses";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
+import DocumentTemplate from "../../components/DocumentationTemplate";
 
 export default function Course({ course }) {
   //console.log(Courses.filter((c) => c.slug.includes("02")));
-  //console.log(course);
+  console.log(course);
   //const router = useRouter();
   //console.log(router.query.linkProps) //read data from query
 
   return (
     <motion.article
-      initial={{ x: -50, opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      exit={{ x: -50, opacity: 0 }}
-      transition={{ duration: 0.5 }}
+      //initial={{ x: -50, opacity: 0 }}
+      //animate={{ x: 0, opacity: 1 }}
+      //exit={{ x: -50, opacity: 0 }}
+      //transition={{ duration: 0.5 }}
       className="section"
       //key={`coures-page-${course.slug}`}
     >
@@ -22,11 +23,9 @@ export default function Course({ course }) {
         pageTitle={course.title}
         description="Este es el articulo 01 y habla de esto y esto otro una y otra vez 01"
         article={true}
+        image={course.mainImage.url}
       />
-      <p>{}</p>
-      <h1>{course.title}</h1>
-      <img src={course.MainImg.url} alt="test" width={"60%"} />
-      <p style={{ width: "60%" }}>{course.abstract}</p>
+      <DocumentTemplate {...course} />
     </motion.article>
   );
 }

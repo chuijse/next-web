@@ -39,10 +39,10 @@ export default function Teaching() {
           <Card
             title={course.title}
             slug={course.slug}
-            img={course.MainImg.url}
+            img={course.mainImage.url}
             semester={course.semester}
             year={course.year}
-            contents={course.content}
+            contents={course.courseContent}
             key={`course-card-${i}`}
           />
         ))}

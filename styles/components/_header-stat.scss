@@ -1,0 +1,20 @@
+@use "../abstract/colors.module" as *;
+@use "../abstract/fonts" as *;
+@use "../abstract/responsive" as *;
+
+.header-stat {
+  .header-stat-class {
+    font-family: "Share Tech Mono", monospace;
+    color: $primary-color;
+    font-size: 1rem;
+    margin-bottom: 0px;
+  }
+  .header-stat-info {
+    font-family: "Roboto Mono", monospace;
+    color: $black-color;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0px;
+    word-wrap: break-word;
+  }
+}
