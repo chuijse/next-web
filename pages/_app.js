@@ -1,7 +1,8 @@
 import "../styles/index.scss";
 import Nav from "../components/Nav";
-import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React, { useState, useLayoutEffect } from "react";
+import { AnimatePresence } from "framer-motion";
+import { useMediaQuery } from "react-responsive";
 
 // Example of diferent animation for each page
 //https://codesandbox.io/s/framer-motion-animatepresence-react-router-dom-9dhyn?from-embed
@@ -12,11 +13,20 @@ import { motion, AnimatePresence } from "framer-motion";
 
 function MyApp({ Component, pageProps, router }) {
   //console.log(router);
+  //const isTabletOrMobile = useMediaQuery({ maxWidth: 1224 });
+
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  const [hideOnMobile, setHideOnMobile] = useState(false);
+
+  useLayoutEffect(() => {
+    setHideOnMobile(isMobile);
+  }, [isMobile]);
+
   return (
     <React.Fragment>
       <Nav />
       <AnimatePresence exitBeforeEnter>
-        <Component {...pageProps} key={router.route} />
+        <Component {...pageProps} key={router.route} isMobile={hideOnMobile} />
       </AnimatePresence>
     </React.Fragment>
   );

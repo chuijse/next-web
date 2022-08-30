@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState, useLayoutEffect } from "react";
 import Seo from "../components/Seo";
 import { Courses } from "../components/Courses";
 import { motion } from "framer-motion";
 import Card from "../components/Card";
 import CardsHeader from "../components/CardsHeader";
+import { Context as ResponsiveContext } from "react-responsive";
 
-export default function Teaching() {
+export default function Teaching({ isMobile }) {
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -27,6 +28,12 @@ export default function Teaching() {
     >
       <Seo pageTitle="Docencia" />
       <CardsHeader title="docencia" description="Lista de cursos" />
+      <ResponsiveContext.Provider value={{ width: 100 }}>
+        {isMobile ? <h2>"Show on mobile"</h2> : <h2>"Show in desktop"</h2>}
+        <motion.h3 animate={{ color: isMobile ? "red" : "black" }}>
+          Color
+        </motion.h3>
+      </ResponsiveContext.Provider>
       <motion.section
         className="teachingGrid"
         variants={container}
