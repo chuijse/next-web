@@ -30,11 +30,14 @@ export default function Card({
       transition: { duration: 1 },
     },
     exit: onExit
-      ? null
-      : {
-          clipPath: "inset( 0% 0% 100% 0%)",
-          y: "100%",
+      ? {
+          y: "-20px",
           transition: { duration: 0.5 },
+        }
+      : {
+          /*clipPath: "inset( 0% 0% 100% 0%)",
+          y: "100%",
+          transition: { duration: 0.5 },*/
         },
   };
 

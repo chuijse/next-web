@@ -9,7 +9,7 @@ export default function DocumentTemplate({
   documentType,
   isTablet,
   title,
-  universities,
+  university,
   abstract,
   year,
   semester,
@@ -29,6 +29,7 @@ export default function DocumentTemplate({
 }) {
   const [descriptionTitle, setDescriptionTitle] = useState("");
   const [backButton, setBackButton] = useState("");
+  const [clientType, setClientType] = useState("");
   //const { p, setPhotoTransition } = useContext(PhotoTransitionContext);
   //const [originPathname, setOriginPathname] = useState("");
 
@@ -60,6 +61,7 @@ export default function DocumentTemplate({
       case "course":
         setDescriptionTitle("Descripción del curso");
         setBackButton("Docencia");
+        setClientType("Universidad");
         break;
     }
   }, []);
@@ -71,19 +73,18 @@ export default function DocumentTemplate({
       transition={{ duration: 0.5 }}
     >
       <div className="course-root-header">
-        <div className="course-header">
-          <CourseHeaderInfo
-            isTablet={isTablet}
-            title={title}
-            universities={universities}
-            abstract={abstract}
-            year={year}
-            semester={semester}
-            contents={courseContent}
-            role={role}
-          />
-          <CourseHeaderImage isTablet={isTablet} mainImage={mainImage} />
-        </div>
+        <CourseHeaderInfo
+          isTablet={isTablet}
+          title={title}
+          universities={university}
+          client={clientType}
+          abstract={abstract}
+          year={year}
+          semester={semester}
+          contents={courseContent}
+          role={role}
+        />
+        <CourseHeaderImage isTablet={isTablet} mainImage={mainImage} />
       </div>
       {/*<div className="course-root-body">
         <div className="course-body">

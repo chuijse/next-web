@@ -10,6 +10,7 @@ export default function TemplateHeaderInfo({
   semester,
   contents,
   role,
+  client = "client",
 }) {
   const [contetText, setContetText] = useState("");
 
@@ -41,6 +42,7 @@ export default function TemplateHeaderInfo({
     },
   };
 
+  console.log(`cliente: ${client}`);
   return (
     <motion.div
       initial="initial"
@@ -62,7 +64,7 @@ export default function TemplateHeaderInfo({
       <motion.span variants={item} className="course-header-animation-stat">
         <HeaderStat statClass={"Contenidos"} statName={contetText} />
         <HeaderStat statClass={"Rol"} statName={role.name} />
-        <HeaderStat statClass={"Cliente"} statName={universities?.name} />
+        <HeaderStat statClass={`${client}`} statName={universities?.name} />
         <HeaderStat
           statClass={"Año"}
           statName={`${year} | ${semester}° semestre`}

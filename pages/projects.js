@@ -1,11 +1,12 @@
 import Seo from "../components/Seo";
 import CardsHeader from "../components/CardsHeader";
+import { motion } from "framer-motion";
 
 export default function Projects() {
   return (
-    <section className="section">
+    <motion.article exit={{ opacity: 0 }} transition={{ duration: 1 }}>
       <Seo pageTitle="Proyectos" />
       <CardsHeader title="Proyectos" description="Lista de trabajos" />
-    </section>
+    </motion.article>
   );
 }

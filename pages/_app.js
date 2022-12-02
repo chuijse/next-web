@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps, router }) {
 
   return (
     <React.Fragment>
-      <Nav />
+      {!hideOnMobile && <Nav />}
       <AnimatePresence exitBeforeEnter>
         <Component {...pageProps} key={router.route} isMobile={hideOnMobile} />
       </AnimatePresence>
