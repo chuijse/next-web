@@ -9,7 +9,12 @@ export const Courses = [
       "Un espacio de reflexión, colaboración y de hacer en torno a la música y cómo las tecnologías pueden ayudarnos a extender nuestras capacidades creativas",
     semester: "1",
     slug: "luthiers-del-siglo-xix-1-2019",
-    colleages: [
+    colleagues: [
+      { name: "Cristian Huijse", link: "chuijse.github.io" },
+      { name: "Pablo Huijse", link: "phuijse.github.io" },
+      { name: "Teo Danneman", link: "TeoDaneman.com" },
+    ],
+    tecnologies: [
       { name: "Cristian Huijse", link: "chuijse.github.io" },
       { name: "Pablo Huijse", link: "phuijse.github.io" },
       { name: "Teo Danneman", link: "TeoDaneman.com" },
@@ -54,7 +59,12 @@ export const Courses = [
       "Un espacio de reflexión, colaboración y de hacer en torno a la música y cómo las tecnologías pueden ayudarnos a extender nuestras capacidades creativas",
     semester: "1",
     slug: "luthiers-del-siglo-xix-1-2019",
-    colleages: [
+    colleagues: [
+      { name: "Cristian Huijse", link: "chuijse.github.io" },
+      { name: "Pablo Huijse", link: "phuijse.github.io" },
+      { name: "Teo Danneman", link: "TeoDaneman.com" },
+    ],
+    tecnologies: [
       { name: "Cristian Huijse", link: "chuijse.github.io" },
       { name: "Pablo Huijse", link: "phuijse.github.io" },
       { name: "Teo Danneman", link: "TeoDaneman.com" },
@@ -98,7 +108,12 @@ export const Courses = [
       "Un espacio de reflexión, colaboración y de hacer en torno a la música y cómo las tecnologías pueden ayudarnos a extender nuestras capacidades creativas",
     semester: "1",
     slug: "luthiers-del-siglo-xix-1-2019",
-    colleages: [
+    colleagues: [
+      { name: "Cristian Huijse", link: "chuijse.github.io" },
+      { name: "Pablo Huijse", link: "phuijse.github.io" },
+      { name: "Teo Danneman", link: "TeoDaneman.com" },
+    ],
+    tecnologies: [
       { name: "Cristian Huijse", link: "chuijse.github.io" },
       { name: "Pablo Huijse", link: "phuijse.github.io" },
       { name: "Teo Danneman", link: "TeoDaneman.com" },

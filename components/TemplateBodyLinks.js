@@ -1,10 +1,10 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useState, useContext, useRef } from "react";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+//import { useInView } from "react-intersection-observer";
 import BackButton from "./BackButton";
 import ShareButtons from "./Share";
 import Button from "./Button";
-import { PhotoTransitionContext } from "../Context/PhotoTransitionContext";
+//import { PhotoTransitionContext } from "../Context/PhotoTransitionContext";
 
 function ButtonArray({ collectionType, data }) {
   return (
@@ -27,34 +27,30 @@ export default function TemplateBodyLinks({
   backButton,
   id,
 }) {
-  const [ref, inView] = useInView();
+  console.log(colleagues);
   const [inScreen, setInScreen] = useState(false);
-  const { p, setPhotoTransition } = useContext(PhotoTransitionContext);
-
-  useEffect(() => {
-    if (inView) {
-      //console.log(`inView: ${inView}`);
-      setInScreen(true);
-    }
-  }, [inView]);
+  //const { p, setPhotoTransition } = useContext(PhotoTransitionContext);
+  const scrollRef = useRef(null);
 
   return (
-    <div className="course-body-links" ref={ref}>
+    <div className="course-body-links" ref={scrollRef}>
       <motion.h3
         initial={{ clipPath: "inset(0% 0% 100% 0%)", y: "100%" }}
-        animate={inScreen && { clipPath: "inset(0% 0% 0% 0%)", y: "0" }}
+        whileInView={{ clipPath: "inset(0% 0% 0% 0%)", y: "0" }}
         transition={{
           duration: 0.5,
           delay: 0.5,
         }}
+        //viewport={{ root: scrollRef }}
       >
         Links de interés
       </motion.h3>
       <motion.span
         className="course-body-links-aniamtion"
-        initial={{ clipPath: "inset(100% 0% 0% 0%)", y: "-100%" }}
-        animate={inScreen && { clipPath: "inset(0% 0% 0% 0%)", y: "0" }}
-        transition={{ duration: 1.5, delay: 1 }}
+        //initial={{ clipPath: "inset(100% 0% 0% 0%)", y: "-100%" }}
+        //whileInView={{ clipPath: "inset(0% 0% 0% 0%)", y: "0" }}
+        //transition={{ duration: 1.5, delay: 1 }}
+        //viewport={{ root: scrollRef }}
       >
         <div className="course-body-links-buttons">
           <ButtonArray
@@ -66,7 +62,13 @@ export default function TemplateBodyLinks({
             collectionType={"Tecnicas, herramientas y tecnologías:"}
           />
         </div>
-        <div onClick={() => setPhotoTransition(false)}>
+        <div
+          onClick={
+            {
+              /*() => setPhotoTransition(false)}*/
+            }
+          }
+        >
           <BackButton
             text={`Volver a ${backButton}`}
             path="/teaching"
@@ -76,7 +78,7 @@ export default function TemplateBodyLinks({
         </div>
         <ShareButtons
           title={`${title} | CHH Portafolio`}
-          url={location.href}
+          url={""}
           twitterHandle={"CHH_Portafolio"}
           tags={["CHH"]}
         />

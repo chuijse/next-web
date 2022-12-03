@@ -20,8 +20,8 @@ export default function Seo({
 
   return (
     <Head>
-      <title>{`CHH | ${pageTitle}`}</title>
-      <meta name="title" content={`CHH | ${pageTitle}`}></meta>
+      <title>{`${pageTitle} | CHH`}</title>
+      <meta name="title" content={`${pageTitle} | CHH`}></meta>
       <meta name="description" content={description} />
       <meta name="image" content={image} />
       <meta name="year" content={year} />

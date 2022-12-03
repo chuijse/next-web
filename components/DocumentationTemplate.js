@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import { motion } from "framer-motion";
-//import CourseBodyLinks from "../components/TemplateBodyLinks";
-//import CourseBodyDescription from "../components/TemplateBodyDescription";
+import CourseBodyLinks from "../components/TemplateBodyLinks";
+import CourseBodyDescription from "../components/TemplateBodyDescription";
 import CourseHeaderInfo from "../components/TemplateHeaderInfo";
 import CourseHeaderImage from "../components/TemplateHeaderImage";
 
@@ -72,7 +72,7 @@ export default function DocumentTemplate({
       //exit={{ opacity: 0, backgroundColor: "#000" }}
       transition={{ duration: 0.5 }}
     >
-      <div className="course-root-header">
+      <section className="course-root-header">
         <CourseHeaderInfo
           isTablet={isTablet}
           title={title}
@@ -85,27 +85,25 @@ export default function DocumentTemplate({
           role={role}
         />
         <CourseHeaderImage isTablet={isTablet} mainImage={mainImage} />
-      </div>
-      {/*<div className="course-root-body">
-        <div className="course-body">
-          <CourseBodyLinks
-            colleagues={colleagues}
-            tecnologies={tecnologies}
-            title={title}
-            location={location}
-            backButton={backButton}
-            id={id}
-          />
-          <CourseBodyDescription
-            portableText={_rawBody}
-            imageGallery={imageGallery}
-            descriptionTitle={descriptionTitle}
-            slug={slug}
-            id={id}
-            location={location}
-          />
-        </div>
-  </div>*/}
+      </section>
+      <section className="course-root-body">
+        <CourseBodyLinks
+          colleagues={colleagues}
+          tecnologies={tecnologies}
+          title={title}
+          location={location}
+          backButton={backButton}
+          id={id}
+        />
+        {/*<CourseBodyDescription
+          portableText={_rawBody}
+          imageGallery={imageGallery}
+          descriptionTitle={descriptionTitle}
+          slug={slug}
+          id={id}
+          location={location}
+  />*/}
+      </section>
     </motion.article>
   );
 }
