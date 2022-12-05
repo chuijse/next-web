@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import flechaHorizontalB from "../images/flechaHorizontal.svg";
+import flechaHorizontal from "../images/flechaHorizontal.svg";
+import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 
 const Button = (props) => {
@@ -34,10 +35,10 @@ const Button = (props) => {
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
                     >
-                      <img
-                        src={flechaHorizontalB}
-                        alt="flecha-blog-chh.work"
-                        width="65"
+                      <Image
+                        src={flechaHorizontal}
+                        alt="link arrow"
+                        width="45"
                       />
                     </motion.div>
                   ) : null}
