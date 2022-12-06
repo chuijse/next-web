@@ -55,7 +55,7 @@ export default function Card({
   }
 
   return (
-    <motion.div
+    <motion.section
       onHoverStart={() => setIsActive(true)}
       onHoverEnd={() => setIsActive(false)}
       variants={item}
@@ -116,6 +116,6 @@ export default function Card({
           ) : null}
         </div>
       </motion.div>
-    </motion.div>
+    </motion.section>
   );
 }
