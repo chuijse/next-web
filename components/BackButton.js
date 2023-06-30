@@ -15,7 +15,7 @@ export default function BackButton({
     <React.Fragment>
       <div className="back-button-root">
         <Link className="back-button" href={path} passHref>
-          <a>{text}</a>
+          {text}
         </Link>
       </div>
     </React.Fragment>
